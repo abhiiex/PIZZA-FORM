@@ -1,0 +1,82 @@
+
+body{
+    font-size: 20pt;
+    }
+ 
+/* 
+    //FOR CENTERING DIV//
+h2{ 
+    justify-content: center;
+    display: flex;
+    align-items: center;
+} */
+th{
+    text-align:auto; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.pizza-form-list {
+    text-align: center;
+    padding: 15px;
+    margin-left: 300px;
+    margin: auto;
+    width:60%;
+    background-image: linear-gradient(#00BFFF,#b8eff6,#ADD8E6, #d3f5f9, #74ccf4);
+    box-shadow: 8px 5px 5px #a8b2ca;
+}
+option{
+   margin-left: 100px;
+}
+#food-items {
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+body{
+  font-family:Patrick Hand SC;
+  font-size:25px;
+  /* background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs5FtRG4p7xaINAsAJvCHPI6pwOsn3_SIupRyiZxWtG9ubWAzm'); */
+  background-size:cover;
+}
+
+.form-1 {
+  border-radius:5px;
+  height:auto;
+  width:450px;
+}
+input{
+  font-family:Waiting for the Sunrise;
+  font-size:17px;
+  font-weight:bold;
+  background-color: #f3f6f4;
+  border:solid rgb(0, 255, 255) 3px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 12px 12px;
+}
+
+/* DISPLAY BOX */
+.display-box {
+    background-color: #f3f6f4;
+    border:solid rgb(0, 255, 255) 3px;;
+    border-radius: 7px;
+    width: auto;
+    height: auto;
+}
+/* BUTTON HOVER */
+
+button::before ,
+button::after{
+    position: absolute;
+    content: '';
+    z-index: -1;
+}
+.button-1:hover {
+    background-color: #fff;
+    box-shadow: 0 0 5px #0ff , 0 0 25px #0ff ,
+    0 0 50px #0ff , 0 0 200px #0ff ;
+}
+.button:hover {
+    background-color: #fff;
+    box-shadow: 0 0 5px red , 0 0 25px red ,
+    0 0 50px red , 0 0 200px red ;
+}

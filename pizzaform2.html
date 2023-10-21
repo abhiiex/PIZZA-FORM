@@ -1,0 +1,146 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pizzaform2.css">
+    <script type="text/javascript" src="pizzaform.js"> </script> 
+    <title>PIZZA</title>
+ </head>
+ <body>
+    <div class="pizza-form-list">
+        <h3>PIZZA FORM</h3>
+        <h4>==========Price list==========</h4>
+        <table width="40%" id="food-items">
+            <tr>
+                <th>Food Item</th> 
+                <th>-</th>
+                <th>Price(Rs.)</th>
+            </tr>
+            <tr>
+                <td>Chicken pizza</td> 
+                <td> - </td>
+                <td>700.00</td> 
+                </tr> 
+                <tr>
+                <td>Vegetable Pizza</td>
+                <td> - </td> 
+                <td>500.00</td> 
+                </tr>
+                <tr> 
+                <td>Chiken Cheese Pizza</td>
+                <td> - </td>  
+                <td>300.00</td>
+                </tr> 
+                <tr>  
+                <td>Vegetable Cheese Pizza </td>
+                <td> - </td> 
+                <td>200.00</td> 
+                </tr>  
+                <tr>
+                <td>Water Bottle</td>
+                <td> - </td> 
+                <td>100.00</td>
+                </tr>
+        </table> 
+        <!-- DETAIL ABOUT USER-->
+            <div id="form-1">
+                <h3>USER DETAILS</h3>
+        <h3>=========================</h3>
+          <form name="input" action="#" method="post">
+           <tr><td>First Name: </td><td><input class="display-box" type="text" placeholder="AVISHEK"><br/></td></tr>
+            <tr><td>Last Name: </td><td><input class="display-box" type="text" placeholder="PANDIT"><br/></td></tr>
+           <tr><td>C Address: </td><td><input class="display-box" type="email"  placeholder="CANADA">
+            <br/></td></tr>
+            <tr><td>Mobile No: </td>
+                <td><input class="display-box" type="text" id="mblenmb" onfocusout="checkmob()" placeholder="6291571174"></td></tr> 
+              <p>Pizza toppings (Check all that apply)</p>
+              <input type='checkbox' >Cheese
+              <input type='checkbox'>Mushrooms
+              <input type='checkbox'>Pepperoni
+              <p>Comments:</p>
+                <textarea class="display-box"></textarea>
+                <br>
+            <input class ="button-1" type="submit" value="SUBMIT" href="#">
+          </form><br>
+        <!-- DETAIL ABOUT USER -->
+       <!-- DETAIL ABOUT FOOD BILLS-->
+       <form name="tblform" >
+        <table width= "100%"  id="alignment" >
+        <tr>
+        <th>Food Item</th>
+        <th> </th>
+        <th>Quantity</th>
+        <th>Price</th> 
+        </tr>
+        <tr> 
+        <td>Item 1:</td> 
+        <td>
+        <select id="item1">
+        <option value="1">--Select Item--</option> 
+        <option value="Chicken pizza">Chicken pizza</option> 
+        <option value="Vegetable Pizza">Vegetable Pizza</option> 
+        <option value="Chicken Kottu">Cheese Pizza</option> 
+        <option value="Vegetable Kottu">AVISHEK Pizza</option> 
+        <option value="Water Bottle">Water Bottle</option> 
+        </select>
+        </td> 
+        <td><input class="display-box"  type="number" value="0" id="q1"></td>
+        <td><input class="display-box"  type="text" id="p1"></td>
+        </tr>   
+        <tr>
+        <td>Item 2:</td>
+        <td>
+        <select id="item2"> 
+        <option value="1">--Select Item--</option> 
+        <option value="Chicken pizza">Chicken pizza</option> 
+        <option value="Vegetable Pizza">Vegetable Pizza</option> 
+        <option value="Chicken Kottu">Chicken Kottu</option>  
+        <option value="Vegetable Kottu">Vegetable Kottu</option>
+        <option value="Water Bottle ">Water Bottle </option>  
+        </select>
+        </td>
+        <td><input class="display-box"  type="number" value="0" id="q2"></td>  
+        <td><input class="display-box"  type="text"  id="p2"></td>  
+        </tr> 
+        <tr>
+        <td>Item 3:</td>
+        <td><select id="item3">  
+        <option value="1">--Select Item--</option> 
+        <option value="Chicken pizza">Chicken pizza</option>  
+        <option value="Vegetable Pizza">Vegetable Pizza</option> 
+        <option value="Chicken Kottu">Chicken Kottu</option>
+        <option value="Vegetable Kottu">Vegetable Kottu</option> 
+        <option value="Water Bottle ">Water Bottle </option> 
+        </select>
+        </td>
+        <td><input class="display-box"  type="number" value="0" id="q3"></td>
+        <td><input class="display-box"  type="text"  id="p3"></td> 
+        </tr> 
+        <tr>
+        <td>Item 4:</td>
+        <td><select id="item4">   
+        <option value="1">--Select Item--</option> 
+        <option value="Chicken pizza">Chicken pizza</option>   
+        <option value="Vegetable Pizza">Vegetable Pizza</option> 
+        <option value="Chicken Kottu">Chicken Kottu</option> 
+        <option value="Vegetable Kottu">Vegetable Kottu</option> 
+        <option value="Water Bottle ">Water Bottle </option>   
+        </select>
+        </td>
+        <td><input type="number" value="0" id="q4"></td>
+        <td><input type="text"  id="p4"></td> 
+        </tr>    
+        <tr>
+        <td></td> 
+        <td></td> 
+        <td><input type="submit" class="button" value="Create Bill" onclick=createBill()></td>
+        <td><input type="reset" class="button" value="Clear"></td>
+        </tr>
+        </table>
+        </form>
+        <!-- DETAIL ABOUT FOOD BILLS-->
+    </div>
+ </body>
+ </html>
